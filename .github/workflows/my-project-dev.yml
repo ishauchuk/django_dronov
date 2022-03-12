@@ -28,9 +28,6 @@ jobs:
     - name: Run Linters
       run: |
         flake8
-    - name: Run Tests
-      run: |
-        python manage.py test
     - name: Final
       run: |
         echo "DONE"
