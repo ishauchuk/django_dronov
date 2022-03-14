@@ -15,4 +15,3 @@ def by_rubric(request, rubric_id):
     current_rubric = Rubric.objects.get(pk=rubric_id)
     content = {'bbs': bbs, 'rubrics': rubrics, 'current_rubric': current_rubric}
     return render(request, 'bboard/by_rubric.html', content)
-
